@@ -29,4 +29,4 @@ bash grademe.sh ft_memdel ft_striter ft_striteri ft_strmap ft_strmapi ft_strtrim
 bash grademe.sh ft_lstnew ft_lstadd ft_lstdelone ft_lstdel ft_lstiter ft_lstmap
 
 # 42FileChecker
-https://github.com/jgigault/42FileChecker
+git clone https://github.com/jgigault/42FileChecker
