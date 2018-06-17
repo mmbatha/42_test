@@ -30,7 +30,7 @@ int			main(int argc, char **argv)
 		list = ft_strsplit(str, argv[2][0]);
 		len = sizeof(list)/sizeof(list[0]);
 		i = 0;
-		while (i < 4)
+		while (i < list[i])
 		{
 			ft_putendl(list[i]);
 			i++;
