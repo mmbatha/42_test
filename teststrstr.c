@@ -24,7 +24,7 @@ int			main(int argc, char **argv)
 		printf("The substring from strstr is: %s\n", ret);
 		ret = ft_strstr(argv[1], argv[2]);
 		printf("The substring from ft_strstr is: %s\n", ret);
-		
-		return (0);
-	}
+
+	}		
+	return (0);
 }
