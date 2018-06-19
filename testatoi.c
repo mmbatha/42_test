@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "libft1/libft.h"
 
@@ -18,16 +17,13 @@ int			main(int argc, char **argv)
 {
 	char str[20];
 	int val;
-	
-	if (argc == 2)
-	{
-		ft_putendl("|******ft_atoi.c******|");
-		ft_strcpy(str, argv[1]);
-		val = atoi(argv[1]);
-		printf("String value (atoi) = %s, Int value = %i\n", str, val);
-		val = ft_atoi(argv[1]);
-		printf("String value (ft_atoi) = %s, Int value = %i\n", str, val);
-	}
+
+	ft_putendl("|******ft_atoi.c******|");
+	ft_strcpy(str, argv[1]);
+	val = atoi(argv[1]);
+	printf("String value (atoi) = %s, Int value = %i\n", str, val);
+	val = ft_atoi(argv[1]);
+	printf("String value (ft_atoi) = %s, Int value = %i\n", str, val);
 
 	return (0);
 }
