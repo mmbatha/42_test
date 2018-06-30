@@ -1,5 +1,5 @@
 # test
-Used for testing Libft, Peer Video
+Used for testing Libft, Peer Video and GNL
 
 # Norm
 python <(curl -s https://raw.githubusercontent.com/mmbatha/test/mmbatha-patch-1/pynorm.py)
@@ -30,3 +30,6 @@ bash grademe.sh ft_lstnew ft_lstadd ft_lstdelone ft_lstdel ft_lstiter ft_lstmap
 
 # 42FileChecker
 git clone https://github.com/jgigault/42FileChecker
+
+# get_next_line
+git clone https://github.com/Damothepirate/GNL
