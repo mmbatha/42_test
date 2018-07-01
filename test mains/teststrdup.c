@@ -8,11 +8,11 @@ int				main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		printf("%s\n", target);
+		printf("String before ft_strdup: %s\n", target);
 
 		ft_strcpy(source, argv[1]);
 		target = ft_strdup(source);
-		printf("%s\n", target);
+		printf("String after ft_strdup: %s\n", target);
 	}
 	return (0);
 }
