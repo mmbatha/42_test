@@ -38,4 +38,4 @@ Used for testing Libft, Peer Video and GNL
 `leaks [process ID or name] >> leaks.txt`
 
 # detect leaks
-https://github.com/mmbatha/test/leak_detector_c/
+https://github.com/mmbatha/test/tree/master/leak_detector_c
