@@ -1,12 +1,15 @@
 # Usage
 Assuming you have a *main.c* file that allocates memory but doesn't deallocate it. This is what causes leaks.
-These files were compiled using GCC.
+Here are the steps to finding out exactly where you've allocted without freeing.
 
 # Step 1
+Download the following files to your project folder: *leak_detector_c.h*, *leak_detector_c.c* and *main.c*(opional)
+
+# Step 2
 To test the memory leak, just add the *leak_detector_c.h* file to the faulty main (or whatever you called it) and add the following line to the start of your main function:
 	`atexit(report_mem_leak);`
 
-# Step 2
+# Step 3
 Now compile the code and run the program:
 ```
 $> gcc -c leak_detector_c.c
@@ -16,7 +19,7 @@ $> ./memtest
 $> cat leak_info.txt
 ```
 
-# Step 3
+# Step 4
 Now you'll get an output similar to the one shown below:
 ```
 Memory Leak Summary
