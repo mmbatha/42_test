@@ -1,40 +1,45 @@
 # Usage
-Assuming you have a *main.c* file that allocates memory but doesn't deallocate it. This is what causes leaks.
-These files were compiled using GCC.
+This assumes you have a *main.c* file that allocates memory but doesn't deallocate it. This is what causes leaks.
+Here are the steps to finding out exactly where you've allocted without freeing.
 
 # Step 1
+Download the following files to your project folder: *leak_detector_c.h*, *leak_detector_c.c* and *main.c*(opional)
+
+# Step 2
 To test the memory leak, just add the *leak_detector_c.h* file to the faulty main (or whatever you called it) and add the following line to the start of your main function:
 	`atexit(report_mem_leak);`
 
-# Step 2
-Now compile the code and run the program:
-
-`$> gcc -c leak_detector_c.c`\n
-`$> gcc -c main.c`\n
-`$> gcc -o memtest leak_detector_c.o main.o`\n
-`$> ./memtest`\n
-`$> cat leak_info.txt`\n
-
 # Step 3
-Now you'll get an output similar to the one shown below:
+Now compile the code and run the program:
+```
+$> gcc -c leak_detector_c.c
+$> gcc -c main.c
+$> gcc -o memtest leak_detector_c.o main.o
+$> ./memtest
+$> cat leak_info.txt
+```
 
-`Memory Leak Summary`
-`-----------------------------------`
-`address : 0x7f81124026e0`
-`size    : 1 bytes`
-`file    : main.c`
-`line    : 23`
-`-----------------------------------`
-`address : 0x7f81124026f0`
-`size    : 40 bytes`
-`file    : main.c`
-`line    : 24`
-`-----------------------------------`
-`address : 0x7f8112402720`
-`size    : 60 bytes`
-`file    : main.c`
-`line    : 25`
-`-----------------------------------`
+# Step 4
+Now you'll get an output similar to the one shown below:
+```
+Memory Leak Summary
+-----------------------------------
+address : 0x7f81124026e0
+size    : 1 bytes
+file    : main.c
+line    : 23
+-----------------------------------
+address : 0x7f81124026f0
+size    : 40 bytes
+file    : main.c
+line    : 24
+-----------------------------------
+address : 0x7f8112402720
+size    : 60 bytes
+file    : main.c
+line    : 25
+-----------------------------------
+```
 
 # "What am I looking at?"
 
@@ -51,7 +56,8 @@ At the end of the program, we can get the unallocated memory references from the
 The line `atexit(report_mem_leak)` registers the `report_mem_leak()` function to be called at the end of the execution of the program and this function writes the memory leak summary into the *leak_info.txt* file.
 
 # Disclaimer
-This "project" is an updated version of the following article:\n
-https://www.codeproject.com/Articles/19361/Memory-Leak-Detection-in-C
+This "project" is an updated version of the following article:
+
+[Memory Leak Detection in C](https://www.codeproject.com/Articles/19361/Memory-Leak-Detection-in-C)
 
 It was created to work with projects done at your nearest 42 School.
