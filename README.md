@@ -38,4 +38,4 @@ Used for testing Libft, Peer Video and GNL
 `leaks [process ID or name] >> leaks.txt`
 
 # detect leaks
-[Leak Detector](../leak_detector_c)
+[Leak Detector](leak_detector_c)
