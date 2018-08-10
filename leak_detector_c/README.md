@@ -53,7 +53,8 @@ At the end of the program, we can get the unallocated memory references from the
 The line `atexit(report_mem_leak)` registers the `report_mem_leak()` function to be called at the end of the execution of the program and this function writes the memory leak summary into the *leak_info.txt* file.
 
 # Disclaimer
-This "project" is an updated version of the following article:\n
-https://www.codeproject.com/Articles/19361/Memory-Leak-Detection-in-C
+This "project" is an updated version of the following article:
+
+[Memory Leak Detection in C](https://www.codeproject.com/Articles/19361/Memory-Leak-Detection-in-C)
 
 It was created to work with projects done at your nearest 42 School.
