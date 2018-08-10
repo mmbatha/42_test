@@ -9,11 +9,11 @@ To test the memory leak, just add the *leak_detector_c.h* file to the faulty mai
 # Step 2
 Now compile the code and run the program:
 
-`$> gcc -c leak_detector_c.c`\n
-`$> gcc -c main.c`\n
-`$> gcc -o memtest leak_detector_c.o main.o`\n
-`$> ./memtest`\n
-`$> cat leak_info.txt`\n
+`$> gcc -c leak_detector_c.c`
+`$> gcc -c main.c`
+`$> gcc -o memtest leak_detector_c.o main.o`
+`$> ./memtest`
+`$> cat leak_info.txt`
 
 # Step 3
 Now you'll get an output similar to the one shown below:
