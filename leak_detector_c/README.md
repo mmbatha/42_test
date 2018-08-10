@@ -1,5 +1,5 @@
 # Usage
-Assuming you have a *main.c* file that allocates memory but doesn't deallocate it. This is what causes leaks.
+This assumes you have a *main.c* file that allocates memory but doesn't deallocate it. This is what causes leaks.
 Here are the steps to finding out exactly where you've allocted without freeing.
 
 # Step 1
