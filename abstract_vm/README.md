@@ -188,3 +188,9 @@ add
 
 exit
 ```
+# Custom test 7
+```
+pop
+
+;;
+```
