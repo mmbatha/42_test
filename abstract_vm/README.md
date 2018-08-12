@@ -19,6 +19,7 @@ pop
 assert double(42.42)
 
 exit
+;;
 ```
 # Test 2
 ```
@@ -28,12 +29,14 @@ push int32(0)
 div
 
 exit
+;;
 ```
 # Test 3
 ```
 push int16(999999999999999999999999999)
 
 exit
+;;
 ```
 # Test 4
 ```
@@ -41,12 +44,14 @@ push int16(32 ;)
 pu int(32))
 
 exit
+;;
 ```
 # Test 5
 ```
 pop
 
 exit
+;;
 ```
 # Test 6
 ```
@@ -55,6 +60,7 @@ push int32(42)
 assert int32(0)
 
 exit
+;;
 ```
 # Test 7
 ```
@@ -63,6 +69,7 @@ push int32(42)
 add
 
 exit
+;;
 ```
 # Test 8
 ```
@@ -74,7 +81,7 @@ push int8(112) ;p
 
 print
 
-pop 
+pop
 
 print
 
@@ -82,7 +89,7 @@ pop
 
 print
 
-pop 
+pop
 
 print
 
@@ -93,6 +100,7 @@ print
 pop
 
 exit
+;;
 ```
 # Custom test 1
 ```
@@ -110,6 +118,7 @@ push int8(4)
 sub
 
 exit
+;;
 ```
 # Custom test 2
 ```
@@ -127,6 +136,7 @@ push int8(40)
 sub
 
 exit
+;;
 ```
 # Custom test 3
 ```
@@ -144,6 +154,7 @@ push int8(400)
 sub
 
 exit
+;;
 ```
 # Custom test 4
 ```
@@ -161,6 +172,7 @@ push int8(4000)
 sub
 
 exit
+;;
 ```
 # Custom test 5
 ```
@@ -178,6 +190,7 @@ push int16(40000)
 sub
 
 exit
+;;
 ```
 # Custom test 6
 ```
@@ -187,10 +200,5 @@ push int32(20)
 add
 
 exit
-```
-# Custom test 7
-```
-pop
-
 ;;
 ```
