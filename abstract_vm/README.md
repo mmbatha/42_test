@@ -9,7 +9,7 @@ push float(44.55)
 
 mul
 
-push double(42.42) ;commentaire de ouf
+push double(42.42) ;iqanda
 push int32(42)
 
 dump
