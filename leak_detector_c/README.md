@@ -3,7 +3,7 @@ This assumes you have a *main.c* file that allocates memory but doesn't dealloca
 Here are the steps to finding out exactly where you've allocted without freeing.
 
 # Step 1
-Download the following files to your project folder: *leak_detector_c.h*, *leak_detector_c.c* and *main.c*(opional)
+Download the following files to your project folder: *leak_detector_c.h*, *leak_detector_c.c* and *main.c*(optional)
 
 # Step 2
 To test the memory leak, just add the *leak_detector_c.h* file to the faulty main (or whatever you called it) and add the following line to the start of your main function:
