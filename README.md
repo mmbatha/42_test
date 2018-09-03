@@ -39,3 +39,9 @@ Used for testing Libft, Peer Video and GNL
 
 # detect leaks
 [Leak Detector](leak_detector_c)
+
+# Swingy
+`mvn --version`
+## Files to check 
+`pom.xml`
+`swingy.iml`
