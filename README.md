@@ -42,6 +42,8 @@ Used for testing Libft, Peer Video and GNL
 
 # Swingy
 `mvn --version`
-## Files to check 
+## -- Files to check 
 `pom.xml`
 `swingy.iml`
+## -- Compile
+`mvn clean package`
