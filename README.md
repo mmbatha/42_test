@@ -2,7 +2,7 @@
 Used for testing Libft, Peer Video and GNL
 
 # Norm
-`python <(curl -s https://raw.githubusercontent.com/mmbatha/test/mmbatha-patch-1/pynorm.py)`
+`python <(curl -s https://raw.githubusercontent.com/mmbatha/test/mmbatha-patch-1/pynorm.py)`, a variant of `https://github.com/richard-dp/pynorm`
 
 # Libftest
 `git clone https://github.com/jtoty/Libftest`
