@@ -1,5 +1,5 @@
 # test
-Used for testing Libft, Peer Video and GNL
+Used for testing Libft, GNL and Peer Video.
 
 # Norm
 `python <(curl -s https://raw.githubusercontent.com/mmbatha/test/mmbatha-patch-1/pynorm.py)`, a variant of `https://github.com/richard-dp/pynorm`
@@ -33,12 +33,15 @@ Used for testing Libft, Peer Video and GNL
 
 # get_next_line
 `git clone https://github.com/mmbatha/GNL-1.git`
+## -- Files to copy
 `cp GNL-1/bible.txt corr/`
 `cp GNL-1/gnl* corr/`
 `cp GNL-1/test_* corr/`
 `cd corr/`
+## -- Shells to run
 `sh gnl_intra_test.sh`
 `sh gnl.sh`
+## -- Actual tests
 `./test_gnl bible.txt`
 `./test_gnl test_m38.txt`
 `./test_gnl test_huge.txt`
@@ -47,6 +50,7 @@ Used for testing Libft, Peer Video and GNL
 `./test_gnl test_eminem.txt`
 `./test_gnl test_lorem_5para.txt`
 `./test_gnl test_one_big_fat_line.txt`
+(c) 2019 Courtesy of Damothepirate
 
 # memory leaks
 `leaks [process ID or name] >> leaks.txt`
