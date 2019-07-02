@@ -32,7 +32,21 @@ Used for testing Libft, Peer Video and GNL
 `git clone https://github.com/jgigault/42FileChecker`
 
 # get_next_line
-`git clone https://github.com/Damothepirate/GNL`
+`git clone https://github.com/mmbatha/GNL-1.git`
+`cp GNL-1/bible.txt corr/`
+`cp GNL-1/gnl* corr/`
+`cp GNL-1/test_* corr/`
+`cd corr/`
+`sh gnl_intra_test.sh`
+`sh gnl.sh`
+`./test_gnl bible.txt`
+`./test_gnl test_m38.txt`
+`./test_gnl test_huge.txt`
+`./test_gnl test_lines.txt`
+`./test_gnl test_lines2.txt`
+`./test_gnl test_eminem.txt`
+`./test_gnl test_lorem_5para.txt`
+`./test_gnl test_one_big_fat_line.txt`
 
 # memory leaks
 `leaks [process ID or name] >> leaks.txt`
