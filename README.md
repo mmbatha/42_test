@@ -1,5 +1,5 @@
-# test
-Used for testing Libft, GNL and Peer Video.
+# 42_test
+Used for testing during peer-to-peer evaluations.
 
 # Norm
 `python <(curl -s https://raw.githubusercontent.com/mmbatha/test/mmbatha-patch-1/pynorm.py)`, a variant of `https://github.com/richard-dp/pynorm`
