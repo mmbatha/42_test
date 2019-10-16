@@ -78,11 +78,15 @@ https://youtu.be/B2ThaazAhEA
 `curl 'http://localhost:8080/mmcorr/ex01/phpinfo.php'`
 ## ex02
 `curl 'http://localhost:8080/mmcorr/ex02/print_get.php?login=mmbatha&evaluator=Monde'`
+
 `curl 'http://localhost:8080/mmcorr/ex02/print_get.php?&=&login=mmbatha&&evaluator=Monde'`
 ## ex03
 `curl -c cook.txt 'http://localhost:8080/mmcorr/ex03/cookie_crisp.php?action=set&name=plat&value=choucroute'`
+
 `curl -b cook.txt 'http://localhost:8080/mmcorr/ex03/cookie_crisp.php?action=get&name=plat'`
+
 `curl -c cook.txt 'http://localhost:8080/mmcorr/ex03/cookie_crisp.php?action=del&name=plat'`
+
 `curl -b cook.txt 'http://localhost:8080/mmcorr/ex03/cookie_crisp.php?action=get&name=plat'`
 ## ex04
 `curl 'http://localhost:8080/mmcorr/ex04/raw_text.php'`
@@ -90,5 +94,7 @@ https://youtu.be/B2ThaazAhEA
 `curl --head 'http://localhost:8080/mmcorr/ex05/read_img.php'`
 ## ex06
 `curl --user root:root 'http://localhost:8080/mmcorr/ex06/members_only.php'`
+
 `curl --user zaz:root 'http://localhost:8080/mmcorr/ex06/members_only.php'`
+
 `curl --user zaz:ilovemylittlepony 'http://localhost:8080/mmcorr/ex06/members_only.php'`
