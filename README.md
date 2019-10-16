@@ -69,7 +69,8 @@ Used for testing during peer-to-peer evaluations.
 # Peer Video
 https://youtu.be/B2ThaazAhEA
 
-# PHP - Day 03
+# PHP Bootcamp
+## Day 03
 ## Clone
 `git clone [] ~/Desktop/MAMP/apache2/htdocs/mmcorr`
 ## ex00
@@ -98,3 +99,18 @@ https://youtu.be/B2ThaazAhEA
 `curl --user zaz:root 'http://localhost:8080/mmcorr/ex06/members_only.php'`
 
 `curl --user zaz:ilovemylittlepony 'http://localhost:8080/mmcorr/ex06/members_only.php'`
+
+## Day 04
+## ex00
+`curl -vc cook.txt 'http://localhost:8080/mmcorr/ex00/index.php'`
+
+`curl -vb cook.txt 'http://localhost:8080/mmcorr/ex00/index.php?login=sb&passwd=beeone&submit=OK'`
+
+`curl -vb cook.txt 'http://localhost:8080/mmcorr/ex00/index.php'`
+
+`curl -v 'http://localhost:8080/mmcorr/ex00/index.php'`
+
+## ex01
+'rm htdoc/private/passwd`
+
+`curl -d login=toto1 - passwd=titi1 -d submit=OK 'http://localhost:8080/mmcorr/ex01/create.php'`
