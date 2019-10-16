@@ -111,6 +111,29 @@ https://youtu.be/B2ThaazAhEA
 `curl -v 'http://localhost:8080/mmcorr/ex00/index.php'`
 
 ## ex01
-'rm htdoc/private/passwd`
+`rm htdocs/private/passwd`
 
 `curl -d login=toto1 - passwd=titi1 -d submit=OK 'http://localhost:8080/mmcorr/ex01/create.php'`
+
+`curl -d login=toto2 - passwd= -d submit=OK 'http://localhost:8080/mmcorr/ex01/create.php'`
+
+## ex02
+`rm /htdocs/private/passwd`
+
+`curl -d login=x -d passwd=21 -d submit=OK 'http://localhost:8080/mmcorr/ex01/create.php'`
+
+`curl -d login=x -d oldpw=21 -d newpw=42 -d submit=OK 'http://localhost:8080/mmcorr/ex02/modif.php'`
+
+`more ~/http/Piscines/j04/htdocs/private/passwd`
+
+`curl -d login=x -d oldpw=21 -d newpw=42 -d submit=OK 'http://localhost:8080/mmcorr/ex02/modif.php'`
+
+`curl -d login=x -d oldpw=42 -d newpw= -d submit=OK 'http://localhost:8080/mmcorr/ex02/modif.php'`
+
+## ex03
+`rm /htdocs/private/passwd`
+
+`curl -d login=toto -d passwd=titi -d submit=OK 'http://localhost:8080/mmcorr/ex01/create.php'`
+
+`curl 'http://localhost:8080/mmcorr/ex03/login.php?login=toto&passwd=titi'`
+
