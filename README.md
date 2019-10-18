@@ -137,3 +137,53 @@ https://youtu.be/B2ThaazAhEA
 
 `curl 'http://localhost:8080/mmcorr/ex03/login.php?login=toto&passwd=titi'`
 
+## Day 05
+## ex00
+`cat ~/MAMP/apache2/config.php`
+
+`mysql -u [idbuser] -p < ~/MAMP/apache2/htdocs/mmcorr/ex00/ex00.sql`
+
+## ex01
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex01/ex01.sql` - DEFAULT 'toto', ENUM()
+
+## ex02
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex02/ex02.sql`
+
+## ex03
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex03/ex03.sql`
+
+## ex04
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex04/ex04.sql` - UPDATE... SET... INTERVAL 20 YEAR... id > 5
+
+## ex05
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex05/ex05.sql` - LIMIT 5
+
+## ex06
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex06/ex06.sql` - LIKE '%Vincent%'... LIKE '%vincent%'
+
+## ex07
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex07/ex07.sql` - LIKE '%42%'... LIKE '%42%' ASC;
+
+## ex08
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex08/ex08.sql` - CONCAT_WS()... AS
+
+## ex09
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex09/ex09.sql` - COUNT... AS
+
+## ex10
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex10/ex10.sql` - INNER JOIN... DESC
+
+## ex11
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex11/ex11.sql` - UPPER()
+
+## ex12
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex12/ex12.sql` - OR
+
+## ex13
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex13/ex13.sql` - ROUND(AVG())
+
+## ex14
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex14/ex14.sql` - SUM()
+
+## ex15
+`mysql -u [idbuser] -p db_[username] < ~/MAMP/apache2/htdocs/mmcorr/ex15/ex15.sql` - REVERSE(SUBSTRING())
